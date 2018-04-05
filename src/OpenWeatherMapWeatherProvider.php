@@ -4,9 +4,16 @@ namespace Nfq\Weather;
 
 class OpenWeatherMapWeatherProvider implements WeatherProviderInterface
 {
+    private $apiKey;
+
+    public function __construct(string $apiKey)
+    {
+        $this->apiKey = $apiKey;
+    }
+
     public function fetch(Location $location) : Weather
     {
-        $url = "http://api.openweathermap.org/data/2.5/weather?q=".$location->getCity()."&units=metric&appid=0e3a7cd2e11b8085734baf04d0fabaaa";
+        $url = "http://api.openweathermap.org/data/2.5/weather?q=".$location->getCity()."&units=metric&appid=".$this->apiKey;
 
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
@@ -18,13 +25,12 @@ class OpenWeatherMapWeatherProvider implements WeatherProviderInterface
         $obj = json_decode($result);
 
         if(!isset($obj->main->temp)){
-            throw new \Exception('Nepavyko gauti OpenWeatherMapWeatherProvider orų');
+            throw new WeatherProviderException('Nepavyko gauti OpenWeatherMapWeatherProvider orų');
         }
 
         $weather = new Weather();
         $weather->setTemp($obj->main->temp);
         return $weather;
-
     }
 
 }

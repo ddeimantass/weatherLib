@@ -16,10 +16,10 @@ class DelegatingWeatherProvider implements WeatherProviderInterface
 	    foreach ($this->providers as $provider){
             try {
                 return $provider->fetch($location);
-            } catch (\Exception $e) {
+            } catch (WeatherProviderException $e) {
             }
         }
-        throw new \Exception('Nepavyko gauti DelegatingWeatherProvider orų');
+        throw new WeatherProviderException('Nepavyko gauti DelegatingWeatherProvider orų');
 
 	}
 

@@ -6,7 +6,8 @@ class YahooWeatherProvider implements WeatherProviderInterface
 {
     public function fetch(Location $location) : Weather
     {
-        $yql = "select item.condition.temp from weather.forecast where woeid in (select woeid from geo.places(1) where text='".$location->getCity()."') and u='c'";
+        $where = "woeid in (select woeid from geo.places(1) where text='".$location->getCity()."') and u='c'";
+        $yql = "select item.condition.temp from weather.forecast where ".$where;
         $url = "https://query.yahooapis.com/v1/public/yql?q=" . urlencode($yql) . "&format=json";
 
         $ch = curl_init();
@@ -19,7 +20,7 @@ class YahooWeatherProvider implements WeatherProviderInterface
         $obj = json_decode($result);
 
         if(!isset($obj->query->results->channel->item->condition->temp)){
-            throw new \Exception('Nepavyko gauti YahooWeatherProvider orų');
+            throw new WeatherProviderException('Nepavyko gauti YahooWeatherProvider orų');
         }
 
         $weather = new Weather();
