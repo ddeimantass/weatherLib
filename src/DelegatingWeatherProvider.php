@@ -19,7 +19,7 @@ class DelegatingWeatherProvider implements WeatherProviderInterface
             } catch (WeatherProviderException $e) {
             }
         }
-        throw new WeatherProviderException('Nepavyko gauti DelegatingWeatherProvider orų');
+        throw new WeatherProviderException('Failed to get DelegatingWeatherProvider weather');
 
 	}
 

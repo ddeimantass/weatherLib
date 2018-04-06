@@ -13,7 +13,7 @@ class OpenWeatherMapWeatherProvider implements WeatherProviderInterface
 
     public function fetch(Location $location) : Weather
     {
-        $url = "http://api.openweathermap.org/data/2.5/weather?q=".$location->getCity()."&units=metric&appid=".$this->apiKey;
+        $url = "http://api.openweathermap.org/data/2.5/weather?q=".urlencode($location->getCity())."&units=metric&appid=".$this->apiKey;
 
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
@@ -25,7 +25,7 @@ class OpenWeatherMapWeatherProvider implements WeatherProviderInterface
         $obj = json_decode($result);
 
         if(!isset($obj->main->temp)){
-            throw new WeatherProviderException('Nepavyko gauti OpenWeatherMapWeatherProvider orų');
+            throw new WeatherProviderException('Failed to get OpenWeatherMapWeatherProvider weather');
         }
 
         $weather = new Weather();

@@ -11,7 +11,7 @@ use Nfq\Weather\DelegatingWeatherProvider;
 class test{
     public static function temp(WeatherProviderInterface $provider)
     {
-        $cities = array("Vilnius", "Klaipeda", "London", "Rome");
+        $cities = array("Vilnius", "Klaipeda", "London", "Rome", "Golden's Bridge");
         foreach ($cities as $city){
             $location = new Location($city);
             $weather = $provider->fetch($location);

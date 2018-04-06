@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6097c653-da93-47d6-b2a0-5a9d5da41958" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/WeatherProviderException.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DelegatingWeatherProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DelegatingWeatherProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/OpenWeatherMapWeatherProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/OpenWeatherMapWeatherProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/YahooWeatherProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/YahooWeatherProvider.php" afterDir="false" />
@@ -25,16 +23,16 @@
         <entry file="file://$PROJECT_DIR$/src/DelegatingWeatherProvider.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="155">
-              <caret line="21" column="41" lean-forward="true" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+              <caret line="21" column="91" lean-forward="true" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="91" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="26" column="60" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
+            <state relative-caret-position="225">
+              <caret line="15" column="44" lean-forward="true" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
               <folding>
                 <element signature="e#44#69#0#PHP" expanded="true" />
               </folding>
@@ -72,8 +70,8 @@
       <file leaf-file-name="OpenWeatherMapWeatherProvider.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/OpenWeatherMapWeatherProvider.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="251">
+              <caret line="27" column="99" lean-forward="true" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="99" />
             </state>
           </provider>
         </entry>
@@ -87,11 +85,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="YahooWeatherProvider.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="YahooWeatherProvider.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/YahooWeatherProvider.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="10" column="60" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
+            <state relative-caret-position="120">
+              <caret line="8" column="83" selection-start-line="8" selection-start-column="83" selection-end-line="8" selection-end-column="83" />
             </state>
           </provider>
         </entry>
@@ -126,11 +124,11 @@
         <option value="$PROJECT_DIR$/src/Location.php" />
         <option value="$PROJECT_DIR$/src/Weather.php" />
         <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/src/DelegatingWeatherProvider.php" />
         <option value="$PROJECT_DIR$/src/WeatherProviderException.php" />
-        <option value="$PROJECT_DIR$/src/YahooWeatherProvider.php" />
+        <option value="$PROJECT_DIR$/src/DelegatingWeatherProvider.php" />
         <option value="$PROJECT_DIR$/src/OpenWeatherMapWeatherProvider.php" />
         <option value="$PROJECT_DIR$/test.php" />
+        <option value="$PROJECT_DIR$/src/YahooWeatherProvider.php" />
       </list>
     </option>
   </component>
@@ -209,12 +207,12 @@
       <option name="presentableId" value="Default" />
       <updated>1522856699876</updated>
       <workItem from="1522856702868" duration="1175000" />
-      <workItem from="1522858058737" duration="13230000" />
+      <workItem from="1522858058737" duration="14189000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14405000" />
+    <option name="totallyTimeSpent" value="15364000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="787" extended-state="0" />
@@ -297,13 +295,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Weather.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="13" column="35" lean-forward="true" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/WeatherProviderException.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -314,21 +305,7 @@
     <entry file="file://$PROJECT_DIR$/src/DelegatingWeatherProvider.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
-          <caret line="21" column="41" lean-forward="true" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/OpenWeatherMapWeatherProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/YahooWeatherProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="10" column="60" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
+          <caret line="21" column="91" lean-forward="true" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="91" />
         </state>
       </provider>
     </entry>
@@ -346,6 +323,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Weather.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="13" column="35" lean-forward="true" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="44" lean-forward="true" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+          <folding>
+            <element signature="e#44#69#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OpenWeatherMapWeatherProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="27" column="99" lean-forward="true" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/WeatherProviderInterface.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -353,13 +354,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.php">
+    <entry file="file://$PROJECT_DIR$/src/YahooWeatherProvider.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="26" column="60" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
-          <folding>
-            <element signature="e#44#69#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="120">
+          <caret line="8" column="83" selection-start-line="8" selection-start-column="83" selection-end-line="8" selection-end-column="83" />
         </state>
       </provider>
     </entry>
