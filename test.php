@@ -15,7 +15,7 @@ class test{
         foreach ($cities as $city){
             $location = new Location($city);
             $weather = $provider->fetch($location);
-            echo "Temperatūra (".$city.") yra: ".$weather->getTemp()." laipsnių Celsijaus".PHP_EOL;
+            echo "Current ".$city." temperature is ".$weather->getTemp()." degrees centigrade".PHP_EOL;
         }
 
     }
